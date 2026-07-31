@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>jetson_csi_camera</name>
+  <version>0.2.0</version>
+  <description>ROS 2 native GStreamer driver for NVIDIA Jetson CSI cameras using Argus.</description>
+
+  <maintainer email="samuel@example.com">Samuel</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+
+  <build_depend>pkg-config</build_depend>
+  <build_depend>libgstreamer1.0-dev</build_depend>
+  <build_depend>libgstreamer-plugins-base1.0-dev</build_depend>
+
+  <exec_depend>gstreamer1.0-tools</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

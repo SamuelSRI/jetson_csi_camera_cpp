@@ -1,0 +1,29 @@
+/**:
+  ros__parameters:
+    # NVIDIA Argus sensor index.
+    sensor_id: 0
+
+    # IMX219 capture mode.
+    capture_width: 1640
+    capture_height: 1232
+    framerate: 30
+
+    # Resolution converted in GStreamer before ROS publication.
+    output_width: 640
+    output_height: 480
+
+    # nvvidconv flip method: 0..7.
+    flip_method: 0
+
+    frame_id: camera_front_link
+    camera_name: camera_front
+
+    image_topic: image_raw
+    camera_info_topic: camera_info
+
+    # Recommended for real-time camera streams.
+    use_sensor_data_qos: true
+    qos_depth: 1
+
+    # Internal published-rate log interval in seconds.
+    fps_log_period: 2.0
